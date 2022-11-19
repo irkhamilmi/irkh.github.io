@@ -1,0 +1,76 @@
+body{
+    font: 18px/36px sans-serif, 'Times New Roman', Times, serif;
+    background-color: gray;
+}
+
+h1{
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 0 5px 5px 0 rgb(228, 6, 6);
+
+}
+
+.glery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid grey;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+}
+
+.glery li img {
+    border-radius: 50%;
+}
+
+.glery li span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+}
+
+.glery li a:hover span{
+    opacity: 1;
+    transition: .4s;
+    transform: scale(2) rotate(360deg);
+}
+
+.cler{
+    clear: both;
+}
+
+.cont{
+    width: 370px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.overly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.overly:target{
+    bottom: 0;
+    right: 0;
+}
